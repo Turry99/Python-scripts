@@ -1,3 +1,4 @@
+#This script is made to open a site for a period of time and close it automaticly
 import webbrowser,os,time
 ie = webbrowser.get('c:\\program Files\\internet explorer\\iexplore.exe')
 ie.open('http://google.com')  # Change the URL with the AD/site you want the 'victim' to see
