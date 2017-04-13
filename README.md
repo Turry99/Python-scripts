@@ -19,3 +19,12 @@ This script helps you download pdfs from a website with 1100 books (At the time 
 
 - shutdown.py
 This one is just "template" used to create a remote shell. *Need to work a bit more on it*
+
+- Click&Snap.py
+Simple script to press click and to take an screenshot and save it.
+
+- TicTacToe.py
+First game made in Python. It's a simple CLI TicTacToe
+
+- selfish.py
+A self-replicating script.
