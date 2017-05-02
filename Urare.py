@@ -1,11 +1,39 @@
-import random
+import random, time
+"""
+TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+ TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+  TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+   TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+    TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+     TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+      TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+       TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+      TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+     TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+    TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+   TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+  TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+ TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT
+"""
 
 colors = [
-"\033[30m","\033[31m","\033[32m","\033[33m","\033[34m","\033[35m","\033[36m","\033[37m",
+"\033[31m","\033[32m","\033[33m","\033[34m","\033[35m","\033[36m","\033[37m","\033[39m"
 ]
 
-for x in range(70):
-  string = "Insert the text here"
-  for char in string:
-    print(colors[random.randint(0,7)] + char, end='')
-  print()
+
+for x in range(10):
+	string = "Insert the text here"
+	for x in range(0,20):
+		print(' '*x,end='')
+		for char in string:
+			print(colors[random.randint(0,7)] + char, end='')
+		time.sleep(0.1)
+		print()
+
+	for x in range(18,-1,-1):
+		print(' '*x,end='')
+		for char in string:
+			print(colors[random.randint(0,7)] + char, end='')
+		time.sleep(0.1)
+		print()
